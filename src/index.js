@@ -14,11 +14,11 @@ class CountdownTimer {
     const hoursRef = container.querySelector('[data-value="hours"]');
     const minsRef = container.querySelector('[data-value="mins"]');
     const secsRef = container.querySelector('[data-value="secs"]');
-    const btnRef = document.querySelector('.btn');
-        return {container, daysRef, hoursRef, minsRef, secsRef, btnRef};
+    // const btnRef = document.querySelector('.btn');
+        return {container, daysRef, hoursRef, minsRef, secsRef};//btnRef
   }
-
-  updateTimer({container, daysRef, hoursRef, minsRef, secsRef, btnRef}){
+//btnRef
+  updateTimer({container, daysRef, hoursRef, minsRef, secsRef}){
 // btnRef.addEventListener('click', this.startTimer);
     const time = this.targetDate - Date.now();
 
